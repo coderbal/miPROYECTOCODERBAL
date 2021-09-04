@@ -1,0 +1,64 @@
+// nav para los html
+
+nav ul li{
+	list-style-type: none;
+	list-style-position: inside;
+	display: inline-block;
+	width: 20%;
+	position: relative;
+}
+
+nav ul li a{
+	font-style: normal;
+	font-weight: 500;
+	font-size: 2rem;
+	line-height: 3rem;
+	text-decoration: none;
+	color: black;
+	margin-left: 2rem;
+}
+
+nav ul li a:hover{
+	background-color: whitesmoke;
+}
+
+ul{
+	font-size: 0;
+	background-color: whitesmoke;
+	list-style: none;
+	padding: 5px;
+	border: solid;
+	border-color: white;
+}
+
+ul ul{
+	position: absolute;
+	display: none;
+}
+
+ul ul li{
+	display: block;
+}
+
+ul li:hover ul{
+	display: block;
+}
+
+a{
+	text-decoration: none ;
+	font-size: 1rem;
+}
+
+a:hover{
+	color: deeppink;
+	text-decoration: underline;
+}
+
+a.activa{
+	text-decoration: none;
+}
+
+
+header{
+ grid-area: header;
+}

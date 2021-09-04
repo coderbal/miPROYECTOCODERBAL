@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="cruellashowroom- indumentaria y accesorios. Descubrí nuestra nueva temporada Primavera Verano de Ropa Femenina. ¡Venta al por Mayor y menos! Envíos a todo el País. ">
+		<meta name="keywords" content="ropa, indumentaria, femenina, mayorista, minorista, accesorios, sale, sale indumentaria">
+		<meta name="autor" content="autor.com.ar">
+		<link rel="stylesheet" href="css/main.css">
+		<title>Cruellashowroom</title>
+	</head>
+	<body>
+		<header>
+			<div>
+				<a href="index.html">
+					<img src="img/logo.png" alt="logo Cruellashowroom">
+				</a>
+			</div>
+			<h1>CONTACTO CON CRUELLA</h1>
+				<nav class="navbar navbar-expand-lg navbar-dark bg-light">
+  <div class="container-fluid">
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="tienda.html">TIENDA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="looks2021.html">LOOK2021</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sale.html">SALE</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="comocomprar.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            COMOCOMPRAR
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="contcto.html" tabindex="-1" aria-disabled="true">CONTACTO</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+		</header>
+		<main>
+			<section>
+				<form action="envio.php" method="post">
+					<fieldset>
+						<fieldset>
+							<legend>Información de contacto</legend>
+							<label for="nombre">Nombre</label>
+							<input type="text" name="nombre" ><br>
+							<label for="apellido">Apellido</label>
+							<input type="text" name="apellido"><br>
+							<label for="telefono">Telefono</label>
+							<input type="text" name="telefono"><br>
+							<label for="email">Email</label>
+							<input type="email" name="email"><br>
+						</fieldset>
+						<fieldset>
+							<legend>Consulta sobre compra</legend>
+							<label for="">Minorista</label>
+							<input type="checkbox" name="MI" value="MI">
+							<label for="">Mayorista</label>
+							<input type="checkbox" name="MA" value="MA">
+							<label for="">Otros</label>
+							<input type="checkbox" name="O" value="O">
+						</fieldset>
+						<fieldset>
+							<legend>Horario de contacto</legend>
+							<label for="">8:00 hs a 12:00 hs</label>
+							<input type="radio" name="Horario de contacto" value="8">
+							<label for="">13:00 hs a 18:00 hs</label>
+							<input type="radio" name="Horario de contacto" value="13">
+							<label for="">19:00 hs a 21:00 hs</label>
+							<input type="radio" name="Horario de contacto" value="19">
+						</fieldset>
+						<fieldset>
+							<legend>Prefiero que me contacten por</legend>	
+							<select name="Medio de contacto" id="">
+								<option value="Mail">Mail</option>
+								<option value="Llamada">Llamada</option>
+								<option value="Whatsapp">Whatsapp</option>
+							</select>	
+						</fieldset>
+						<fieldset>
+							<label for="">¿En qué podemos asesorarte?</label><br>
+							<textarea name="" id="" cols="40" rows="20" placeholder="dejar aquí la consulta"></textarea>
+						</fieldset>
+						<br><br>
+						<input type="reset" value="Cancelar">
+						<input type="submit" value="Enviar">
+					</fieldset>
+				</form>
+			</section>
+		</main>
+		<footer>
+			<div>
+				<h2 class="textRight textTransform">mapa del sitio</h2>
+				<h2 class="textRight textTransform">información de contacto</h2>
+			</div>
+			<div>
+				<a href="#"><img src="img/facebook-icon.png" alt="seguinos en facebook"></a>
+				<a href="#"><img src="img/instagram-icon.png" alt="seguinos en instagram"></a>
+				<a href="#"><img src="img/twitter-icon.png" alt="seguinos en twitter"></a>
+			</div>
+			<div>
+				<a href="https://wa.me/<number>">
+					<img src="img/logowtp.png" alt="logowtp">
+				</a>
+			</div>
+		</footer>
+	</body>
+</html>
