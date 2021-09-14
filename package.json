@@ -268,5 +268,13 @@
     "yargs": "^13.3.2",
     "yargs-parser": "^20.2.9"
   },
-  "description": "Bienvenidos a CruellaShowroom QUEREMOS QUE TENGAS LA MEJOR EXPERIENCIA DE COMPRA CON NOSOTROS"
+  "description": "Bienvenidos a CruellaShowroom QUEREMOS QUE TENGAS LA MEJOR EXPERIENCIA DE COMPRA CON NOSOTROS",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderbal/miPROYECTOCODERBAL.git"
+  },
+  "bugs": {
+    "url": "https://github.com/coderbal/miPROYECTOCODERBAL/issues"
+  },
+  "homepage": "https://github.com/coderbal/miPROYECTOCODERBAL#readme"
 }

@@ -11,45 +11,34 @@
 	</head>
 	<body>
 		<header>
-			<div>
-				<a href="index.html">
-					<img src="img/logo.png" alt="logo Cruellashowroom">
-				</a>
-			</div>
-				<nav class="navbar navbar-expand-lg navbar-dark bg-light">
-  				<div class="container-fluid">
-	    			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	     				<span class="navbar-toggler-icon"></span>
-	    			</button>
-    			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		      	<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-			        <li class="nav-item">
-			          <a class="nav-link active" aria-current="page" href="tienda.html">TIENDA</a>
-			        </li>
-			        <li class="nav-item">
-			          <a class="nav-link" href="looks2021.html">LOOK2021</a>
-			        </li>
-			        <li class="nav-item">
-			          <a class="nav-link" href="sale.html">SALE</a>
-			        </li>
-			        <li class="nav-item dropdown">
-			          <a class="nav-link dropdown-toggle" href="comocomprar.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">COMOCOMPRAR
-		          	</a>
-		      		</li>
-	       			<li class="nav-item">
-	         			<a class="nav-link disabled" href="contacto.html" tabindex="-1" aria-disabled="true">CONTACTO</a>
-	        		</li>
-      			</ul>
-			      <form class="d-flex">
-			        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-			        <button class="btn btn-outline-success" type="submit">Search</button>
-			      </form>
-    				</div>
-  				</div>
-				</nav>
+			<nav>
+				<div>
+					<a href="index.html">
+						<img src="img/logo.png" alt="logo Cruellashowroom">
+					</a>
+				</div>
+				<ul>
+					<li>
+						<a href="tienda.html">Tienda</a>
+					</li>
+					<li>
+						<a href="sale.html">Sale</a>
+					</li>
+					<li>
+						<a href="looks2021.html">looks2021</a>
+					</li>
+					<li>
+						<a href="comocomprar.html">Ayuda</a>
+					</li>
+					<li>
+						<a href="contacto.html">Contacto</a>
+					</li>
+				</ul>
 			</nav>
 		</header>
+
 		<!-- aca mostraria las fotos y precios de cada producto disponible para comprar -->
+
 		<main>
 			<div>
 				<img class="agrandar" src="img/remerades.png" alt="desgastadaRemera">
@@ -60,13 +49,14 @@
 				<img class="agrandar" src="img/blusabeige.png" alt="beigeBlusa">
 				<img class="agrandar" src="img/rosa.png" alt="rosaRemera">
 				<img class="agrandar" src="img/gris.png" alt="grisBlusa">
-				<img class="agrandar" src="img/gris.png" alt="grisBlusa">
-				<img class="agrandar" src="img/gris.png" alt="grisBlusa">
-				
+				<img class="agrandar" src="img/vestidoLargo.png" alt="vestidoLargo">
+				<img class="agrandar" src="img/buzoSimple.png" alt="buzoSimple">
+				<img class="agrandar" src="img/buzoTricolor.png" alt="buzoTricolor">
+				<img class="agrandar" src="img/sacoLargo.png" alt="sacoLargo">
 			</div>	
 			<!-- abajo de las imagenes queda la tabla que muestra codigo de producto y colores disponibles paa ventas por mayor -->
-			<section class="textCenter" id="tabla">
-				<table border="3px" cellpadding="5px" cellspacing="5px">
+			<section class="textCenter">
+				<table id="tablaTienda" border="3px" cellpadding="5px" cellspacing="5px">
 					<tr>
 						<td>Producto</td>
 						<td>Código</td>
@@ -74,36 +64,12 @@
 						<td>Color</td>
 					</tr>
 					<tr>
-						<td>Remera Gatito</td>
+						<td>Remera Ratoncita</td>
 						<td>0001</td>
 						<td>$500</td>
 						<td>
 							<ol>
-								<li>Rosa</li>
-								<li>Negro</li>
-								<li>Amarillo</li>
-							</ol>
-						</td>
-					</tr>
-					<tr>
-						<td>Remera Sol</td>
-						<td>0002</td>
-						<td>$650</td>
-						<td>
-							<ol>
-								<li>Rosa</li>
-								<li>Negro</li>
-								<li>Amarillo</li>
-							</ol>
-						</td>
-					</tr>
-					<tr>
-						<td>Remera Básica</td>
-						<td>0003</td>
-						<td>$750</td>
-						<td>
-							<ol>
-								<li>Rosa</li>
+								<li>Blanco</li>
 								<li>Negro</li>
 								<li>Amarillo</li>
 							</ol>
@@ -111,8 +77,32 @@
 					</tr>
 					<tr>
 						<td>Remera Luna</td>
+						<td>0002</td>
+						<td>$600</td>
+						<td>
+							<ol>
+								<li>Gris</li>
+								<li>Negro</li>
+								<li>Amarillo</li>
+							</ol>
+						</td>
+					</tr>
+					<tr>
+						<td>Buzo cuellito</td>
+						<td>0003</td>
+						<td>$900</td>
+						<td>
+							<ol>
+								<li>Gris</li>
+								<li>Negro</li>
+								<li>Camel</li>
+							</ol>
+						</td>
+					</tr>
+					<tr>
+						<td>Remera Estampa</td>
 						<td>0004</td>
-						<td>$800</td>
+						<td>$600</td>
 						<td>
 							<ol>
 								<li>Rosa</li>
@@ -122,14 +112,98 @@
 						</td>
 					</tr>
 					<tr>
-						<td>Remera Cebra</td>
+						<td>Buzo cuello en V</td>
 						<td>0005</td>
-						<td>$850</td>
+						<td>$1300</td>
+						<td>
+							<ol>
+								<li>Blanco con negro</li>
+								<li>Negro con beige</li>
+								<li>Amarillo con blanco</li>
+							</ol>
+						</td>
+					</tr>
+					<tr>
+						<td>Remera Take it easy</td>
+						<td>0006</td>
+						<td>$700</td>
+						<td>
+							<ol>
+								<li>Blanco</li>
+								<li>Negro</li>
+								<li>Verde lima</li>
+							</ol>
+						</td>
+					</tr>
+					<tr>
+						<td>Remera manga corta</td>
+						<td>0007</td>
+						<td>$550</td>
 						<td>
 							<ol>
 								<li>Rosa</li>
 								<li>Negro</li>
 								<li>Amarillo</li>
+							</ol>
+						</td>
+					</tr>
+					<tr>
+						<td>Remera cuello en U</td>
+						<td>0008</td>
+						<td>$500$</td>
+						<td>
+							<ol>
+								<li>Azul</li>
+								<li>Negro</li>
+								<li>Verde oscuro</li>
+							</ol>
+						</td>
+					</tr>
+					<tr>
+						<td>Vestido Largo</td>
+						<td>0009</td>
+						<td>$1200$</td>
+						<td>
+							<ol>
+								<li>Rojo</li>
+								<li>Negro</li>
+								<li>Beige</li>
+							</ol>
+						</td>
+					</tr>
+					<tr>
+						<td>Buzo Tricolor</td>
+						<td>0010</td>
+						<td>$1400$</td>
+						<td>
+							<ol>
+								<li>Rosa, blanco y negro</li>
+								<li>Gris, blanco y negro</li>
+								<li>Beige, blanco y negro</li>
+							</ol>
+						</td>
+					</tr>
+					<tr>
+						<td>Buzo Simple</td>
+						<td>0011</td>
+						<td>$1300$</td>
+						<td>
+							<ol>
+								<li>Gris</li>
+								<li>Negro</li>
+								<li>Beige</li>
+							</ol>
+						</td>
+					</tr>
+					<tr>
+						<td>Saco Largo</td>
+						<td>0012</td>
+						<td>$1500$</td>
+						<td>
+							<ol>
+								<li>Blanco y negro</li>
+								<li>Beige y negro</li>
+								<li>Rosa y negro</li>
 							</ol>
 						</td>
 					</tr>
@@ -138,13 +212,8 @@
 		</main>
 		<footer>
 			<div>
-				<h1 class="textRight textTransform">mapa del sitio</h1>
-				<h2 class="textRight textTransform">información de contacto</h2>
-			</div>
-			<div>
-				<a href="#"><img src="img/facebook-icon.png" alt="seguinos en facebook"></a>
-				<a href="#"><img src="img/instagram-icon.png" alt="seguinos en instagram"></a>
-				<a href="#"><img src="img/twitter-icon.png" alt="seguinos en twitter"></a>
+				<h1 class="textLeft textTransform">mapa del sitio</h1>
+				<h2 class="textLeft textTransform">información de contacto</h2>
 			</div>
 			<div>
 				<a href="https://wa.me/<number>">

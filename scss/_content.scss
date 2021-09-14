@@ -1,58 +1,236 @@
 
-body {
-	background-color: bg-dark;
+body{
+	background-color:$bg-border;
+	background-size: cover;	
+	background-attachment: fixed;
+	overflow: hidden;
 }
 
+html{
+	letter-spacing: 0,1rem;
+	word-spacing: 0,2rem;
+	font-size: 62.5%;
+	font-family: $font-general;
+	overflow: auto;
+}
 
-.titulo{
+h1, h2{
+	color: $bg-dark;
+	font-style: italic;
+	font-weight: $font-bold;
+	font-size: $font-size-medium;
+	line-height: 2rem;
+}
+
+section{
+	table{
+	margin: auto;
+	height: $h-50;
+	
+	background-color: $bg-fondo;
+	border-style: double;
+	border-color: $bg-dark;
+	margin: auto;
+	}
+	tr td{
+	background-color: $bg-info;
+	}
+}
+
+fieldset{
+	
+	margin: auto;
+	border: double 5px;
+	border-color: $bg-white;
+	background-color: $bg-fondo;
+	padding: 4px;
+}
+
+form{
+	width: $w-25;
+	margin: auto;
+}
+
+.local{
+	padding: 2vh 76vh;
+}
+
+.align{
+	padding-right: 10rem;
+}
+
+#ayuda{
+	margin: auto;
 	border: double;
-	color: antiquewhite
+	border-color: $bg-pinksoft;
+	color: $bg-dark;
+	font-weight: $font-thin;
+	font-size: $fontSizeSmall;
+	line-height: 2rem;
+	letter-spacing: 0,1rem;
+	word-spacing: 0,2rem;
+	display: flex;
+	flex-basis: 90%;
+	flex-direction: column;
+	overflow: auto;
+	width: $w-75;
+}
+
+
+#tablaTienda{
+	margin: auto;
+	border: double;
+	border-color: $bg-pinksoft;
+	color: $bg-dark;
+	font-weight: $font-thin;
+	font-size: $fontSizeSmall;
+	line-height: 2rem;
+	letter-spacing: 0,1rem;
+	word-spacing: 0,5rem;
+	display: flex;
+	flex-basis: 90%;
+	flex-direction: column;
+	overflow: auto;
+	width: $w-20;
+}
+
+
+.color{
+	height: $h-50;
+	padding: 18px;
 
 }
 
-.titulo__descuento{
-
-	color: lightpink;
-	font:font-especial;
-	font-size: 5vh;
+.color__tamaño{
+	line-height: 8px;
+	font-size:4rem;
+	background-color: $bg-fondo;
+	color: $bg-fondo;
 }
 
-
-.todo{
-	border-style: dashed;
-	border-color: salmon;
-
+.imagend{
+	width: $w-75;
 }
 
-.todo__sale{
-	background-color: bg-dark;
-		
+.imagend__decoracion{
+	margin: 2vh 60vh;
+}
+
+.consulta{
+	background-color: $bg-fondo;
+}
+
+.consulta__enviar{
+	font-size: $fontSizeSmall;
+	color: $bg-dark;
+}
+
+.linear-gradient{
+	background: linear-gradient(to top, whitesmoke, lightgray);
+	font-style: normal;
+	font-weight: $font-bold;
+	font-size: $fontSizeSmall;
+	line-height: 3rem;
+	text-decoration: underline;
+	text-align: center;
+	color: $bg-dark;
+	margin: 4rem 34rem ;
+}
+
+.linear-gradient:hover{
+	background: linear-gradient(to top, lightgray, whitesmoke); 
+	cursor: pointer;
+	transform:skew(8deg);
 }
 
 .agrandar:hover{
 	cursor: pointer;
 	transform: scale(1.2);
+}
+
+
+.bg-dark{
+	color: $bg-info;
+}
+
+.textCenter{
+	text-align: center;
+}
+
+.textRight{
+	text-align: right;
+}
+
+.textLeft{
+	text-align: left;
+}
+
+.textTransform{
+	text-transform: capitalize;
+}
+
+#fotos img{
+	position: relative;
+	bottom: 0px;
+	left: 10px;
+	border: double 5px;
+	border-color: $bg-dark;
+	box-sizing: border-box;
+	background-color: $bg-fondo;
+	width: $w-25;
+}
+
+
+// body
+
+.grid{
+	width: $w-100;
+	display: grid;
+}
+
+.body{
+	grid-template-areas: "header header header" "main main main" "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:  40vh 140vh 10vh;
+    grid-column-gap: 1px;
+ 	grid-row-gap: 2px;    
+}
+
+main{
+	grid-area: main;
+}
+
+@media only screen and (min-width: 768px) {
+	body{
+		
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 1vh 4vh 1vh ;
+		grid-template-areas: "header header header" "main main main" "footer footer footer";
+		grid-column-gap: 1px;
+    	grid-row-gap: 1px; 
 
 	}
+  }
 
-.precio{
-	margin: 2rem 6rem;
-	
+@media only screen and (min-width: 1024px){
+	body{
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 1vh 2vh 1vh;
+		grid-template-areas: "header header header" "main main main" "main main footer";
+		grid-column-gap: 2px;
+    	grid-row-gap: 2px;
+	}
 }
 
-.precio__comprar{
-	margin: auto;
-	font:font-all;
-	border: double;
-	border-color: white;
-	color: gray;
-	background-color: bg-success;
-	font-weight: 30;
-	font-size: 20px;
-	line-height: 1rem;
-	letter-spacing: 0,1rem;
-	width: w-50;
+header{
+ grid-area: header;
 }
+
+.agrandar:hover{
+	cursor: pointer;
+	transform: scale(1.5);
+}
+
 
 @for $i from 1 through 3{
 	h#{$i}{font-size: 0,5em *$i}
@@ -66,10 +244,9 @@ body {
 @each $icono in facebook, twitter, instagram{
 	.#{$icono}-icon{
 	background-image: url(../img/#{$icono}.png);
-	width: 30px;
-	height: 30px;
+	width: w-25;
+	height: h-38;
 	background-size: 100%;
-
 	}
 }
 
