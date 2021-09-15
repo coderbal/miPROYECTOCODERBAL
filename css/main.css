@@ -9,14 +9,16 @@ nav ul {
   padding: 5px;
   border: solid;
   border-color: antiquewhite;
-  color: whitesmoke; }
+  color: whitesmoke;
+   }
 
 nav li {
   list-style-type: none;
   list-style-position: inside;
   display: inline-block;
   width: 16%;
-  position: relative; }
+  position: relative; 
+}
 
 nav a {
   font-style: normal;
