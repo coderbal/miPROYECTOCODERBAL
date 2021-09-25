@@ -207,9 +207,8 @@ main{
 		grid-template-rows: 1vh 4vh 1vh ;
 		grid-template-areas: "header header header" "main main main" "footer footer footer";
 		grid-column-gap: 1px;
-    	grid-row-gap: 1px; 
-	}
-  }
+    	grid-row-gap: 1px;
+}
 
 @media only screen and (min-width: 1024px){
 	body{
@@ -221,6 +220,8 @@ main{
 	}
 }
 
+
+
 header{
  grid-area: header;
 }
@@ -229,6 +230,12 @@ header{
 	cursor: pointer;
 	transform: scale(1.5);
 }
+
+
+.container{
+	display: flex;
+}
+
 
 
 @for $i from 1 through 3{
