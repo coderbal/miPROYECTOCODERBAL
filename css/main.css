@@ -3,14 +3,18 @@
   padding: 0px;
   margin: 0px; }
 
+
 nav ul {
   font-size: 2rem;
+  display: flex;
   list-style: none;
-  padding: 5px;
+  padding: 10px;
   border: solid;
   border-color: antiquewhite;
   color: whitesmoke;
    }
+
+
 
 nav li {
   list-style-type: none;
@@ -22,7 +26,7 @@ nav li {
 
 nav a {
   font-style: normal;
-  font-weight: 600;
+  font-weight: 600px;
   line-height: 3rem;
   text-decoration: none;
   margin-left: 2rem;
@@ -205,6 +209,7 @@ form {
 
 main {
   grid-area: main; }
+}
 
 @media only screen and (min-width: 768px) {
   body {
@@ -213,6 +218,10 @@ main {
     grid-template-areas: "header header header" "main main main" "footer footer footer";
     grid-column-gap: 1px;
     grid-row-gap: 1px; } }
+
+@media only screen and (max-width: 426px) {
+  nav ul {
+    flex-direction: column;} }
 
 @media only screen and (min-width: 1024px) {
   body {
